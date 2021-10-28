@@ -1,0 +1,5 @@
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+ let age=sonYearsOld*2;
+  let itog=Math.abs(dadYearsOld-age);
+  return (itog)
+}
