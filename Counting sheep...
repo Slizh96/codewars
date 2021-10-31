@@ -1,0 +1,8 @@
+function countSheeps(arrayOfSheep) {
+  let itog=0
+  
+  for (let i=0; i<arrayOfSheep.length; i++)
+    {if (arrayOfSheep[i]) itog +=1}
+  
+    return itog
+}
