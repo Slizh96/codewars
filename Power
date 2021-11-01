@@ -1,0 +1,8 @@
+function numberToPower(number, power){
+let itog=number;
+  for (let i=1; i<power; i++)
+{itog*=number}
+  if (power===0) {itog = 1}
+  return itog
+  
+}
