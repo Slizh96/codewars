@@ -1,0 +1,4 @@
+function periodIsLate(last, today, cycleLength)
+{if (Math.floor(today.getTime()-last.getTime())/86400000>cycleLength) {return true}
+ else {return false};
+}
