@@ -1,0 +1,11 @@
+function expandedForm(num) {
+var a=10;
+  var b=[];
+  while (num>1){
+    var c=num%a;
+    if(c>0){
+    b.unshift(c);}
+  num-=c;
+    a=a*10;}
+  return b.join(" + ")
+}
