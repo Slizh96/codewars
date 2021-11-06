@@ -1,0 +1,7 @@
+function Xbonacci(signature,n){
+if (signature.length>n) return signature.slince(0, n);
+  let summa=[...signature]
+  for (let i=0; summa.length<n; i++)
+    {summa.push(summa.slice(i, summa.length).reduce((a,b)=>a+b,0))}
+  return summa
+}
