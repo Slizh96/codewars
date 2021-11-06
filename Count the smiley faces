@@ -1,0 +1,9 @@
+//return the total number of smiling faces in the array
+function countSmileys(arr) {
+return arr.filter (face => /[:;]{1}[-~]?[)D]{1}/.test(face)).length;
+}
+  function test(arr){
+    console.log("input: ", arr);
+    console.log("output: ", countSmileys(arr));
+  
+}
