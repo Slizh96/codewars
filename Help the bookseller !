@@ -1,0 +1,15 @@
+function stockList(listOfArt, listOfCat){
+if (listOfArt===0||listOfCat===0) return ''
+  const arrs=[];
+  let L='';
+  let N=0;
+  for (let i=0; i<listOfCat.length; i++){
+    L=listOfCat[i];
+    N=0;
+    for (let j=0; j<listOfArt.length;j++){
+      if (listOfArt[j][0]===listOfCat[i]){N+=listOfArt[j].match(/[\d]+/g)*1}}
+    let str=`(${L} : ${N})`
+    arrs.push(str)
+  }
+  return arrs.join(' - ')
+}
