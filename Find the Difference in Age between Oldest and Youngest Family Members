@@ -1,0 +1,10 @@
+function differenceInAges(ages){
+let result=[]
+let maximus=Math.max.apply(null, ages);
+  result.push(maximus);
+  let minim=Math.min.apply(null, ages);
+  result.unshift(minim);
+  let raz=maximus-minim
+  result.push(raz)
+  return result
+}
