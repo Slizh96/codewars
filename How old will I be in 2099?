@@ -1,0 +1,9 @@
+function  calculateAge(ageA, ageB) {
+  
+  if ((ageA+1)<ageB) {return ('You are '+(ageB-ageA)+' years old.')}
+  else if (ageA===ageB-1) {return ('You are '+(ageB-ageA)+' year old.')}
+  else if (ageA===ageB) {return 'You were born this very year!'}
+  else if (ageA===ageB+1) {return ('You will be born in '+(ageA-ageB)+' year.')}
+  else {return ('You will be born in '+(ageA-ageB)+' years.')}
+}
+
