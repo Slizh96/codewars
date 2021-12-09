@@ -1,0 +1,9 @@
+function past(h, m, s){
+  0<=h<=23;
+   0<=m<=23;
+   0<=s<=23;
+  let min=60*m;
+  let hours = 60*60*h
+  let itog=1000*(s+min+hours)
+  return itog
+}
